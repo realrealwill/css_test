@@ -1,0 +1,119 @@
+:root {
+  --color-primary: rgb(14, 53, 120);
+
+  --color-red: #f5222d;
+  --color-gold: #faad14;
+  --color-lime: #a0d911;
+  --color-cyan: #13c2c2;
+  --color-blue: #1677ff;
+  --color-purple: #722ed1;
+  --color-magenta: #eb2f96;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  background-color: white;
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* div {
+  width: 100px;
+  height: 100px;
+  background-color: goldenrod;
+} */
+
+.app {
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+}
+
+#app {
+  width: 100px;
+  height: 100px;
+  background-color: bisque;
+}
+
+.btn {
+  display: block;
+  width: 100px;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.btn-dark {
+  background-color: black;
+  color: aliceblue;
+}
+
+.btn-small {
+  width: 80px;
+}
+
+.block .btn{
+  width: 120px;
+  background-color: red;
+  color: blue;
+}
+
+.app3 {
+  width: 100px;
+  aspect-ratio: 16/9;
+  border: 1px solid black;
+  border-radius: 10px;
+
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+
+  /* 上下 左右 */
+  padding: 10px 20px;
+
+  /* 上 左右 下 */
+  padding: 10px 20px 30px;
+
+  /* 上 右 下 左 */
+  padding: 10px 20px 30px 40px;
+
+  margin: 10px;
+
+  border-top-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 10px;
+}
+
+.pos {
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.pos>div:nth-child(1) {
+  background-color: var(--color-red);
+}
+
+.pos>div:nth-child(2) {
+  background-color: var(--color-cyan);
+}
+
+.pos>div:nth-child(3) {
+  background-color: var(--color-blue);
+}
+
+.pos>div:nth-child(4) {
+  background-color: var(--color-purple);
+}
+
+.pos>div:nth-child(5) {
+  background-color: var(--color-magenta);
+}
+
+.pos>div:nth-child(6) {
+  background-color: var(--color-lime);
+}
