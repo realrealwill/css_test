@@ -90,30 +90,71 @@
 }
 
 .pos {
+  display: flex;
   width: 100dvw;
   height: 100dvh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.pos>div {
+  display: block;
+  width: 100px;
+  height: 50px;
+  min-width: 100px;
 }
 
 .pos>div:nth-child(1) {
   background-color: var(--color-red);
+  width: 100px;
+  height: 50px;
 }
 
 .pos>div:nth-child(2) {
   background-color: var(--color-cyan);
+  width: 100px;
+  height: 50px;
+  /* 相对于原来位置 */
+  position: relative;
+  left: 10px;
+  top: 10px;
+  z-index: 1;
 }
 
 .pos>div:nth-child(3) {
   background-color: var(--color-blue);
+  width: 100px;
+  height: 50px;
 }
 
 .pos>div:nth-child(4) {
   background-color: var(--color-purple);
+  width: 100px;
+  height: 50px;
 }
 
 .pos>div:nth-child(5) {
   background-color: var(--color-magenta);
+  width: 100px;
+  height: 50px;
+  /* 离开文档流 */
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 .pos>div:nth-child(6) {
   background-color: var(--color-lime);
+  width: 100px;
+  height: 50px;
+}
+
+.d-1 {
+  width: 50px;
+  aspect-ratio: 1;
+  background-color: var(--color-red);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
